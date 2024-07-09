@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
+import {RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-layout-page',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterOutlet
+  ],
   template: `
-    <p>
-      layout-page works!
-    </p>
+    <h1>Hero layout</h1>
+
+    <router-outlet></router-outlet>
+
+    <h5>footer</h5>
   `,
   styles: ``
 })
